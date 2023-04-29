@@ -44,7 +44,11 @@ export default function App() {
                     }}
                 >
                     <div className="text_box">
-                        <h1>About</h1>
+                        <h1>
+                            <b>
+                                <u>About</u>
+                            </b>
+                        </h1>
                         <p>
                             Ipsum officiis dolor adipisci nihil necessitatibus
                             Exercitationem inventore harum maxime odit
@@ -67,7 +71,11 @@ export default function App() {
                     }}
                 >
                     <div className="text_box">
-                        <h1>Technical skills</h1>
+                        <h1>
+                            <b>
+                                <u>Technical skills</u>
+                            </b>
+                        </h1>
                         <p>
                             Ipsum officiis dolor adipisci nihil necessitatibus
                             Exercitationem inventore harum maxime odit
@@ -111,7 +119,11 @@ export default function App() {
                     }}
                 >
                     <div className="text_box">
-                        <h1>Projects</h1>
+                        <h1>
+                            <b>
+                                <u>Projects</u>
+                            </b>
+                        </h1>
                         <p>
                             Lorem cumque repellat in quibusdam ratione ad,
                             repellendus doloribus? Dolorum lorem in labore
@@ -191,7 +203,11 @@ export default function App() {
                         height: "100%",
                     }}
                 >
-                    <h1>experience</h1>
+                    <h1>
+                        <b>
+                            <u>Experience</u>
+                        </b>
+                    </h1>
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={4}
@@ -200,11 +216,18 @@ export default function App() {
                     style={{
                         backgroundColor: "#281439",
                         display: "flex",
-                        alignItems: "start",
-                        justifyContent: "center",
-                        height: "100%",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "flex-start",
+                        height: "20%",
                     }}
                 >
+                        <h1>
+                            <b>
+                                <u>Contact Me</u>
+                            </b>
+                        </h1>
+
                     <ContactForm />
                 </ParallaxLayer>
             </Parallax>
