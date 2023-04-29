@@ -59,7 +59,48 @@ img {
     height: 400px; /* Set the height to 200 pixels */
 }
 
+
 .text_box {
-    width: 600px; /* Set the width to 300 pixels */
-    height: 400px; /* Set the height to 200 pixels */
+  width: 600px;
+  height: 400px;
 }
+
+.project_showcase {
+  width: 600px;
+  height: 400px;
+  justify-content: center;
+}
+
+.project_content {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px;
+}
+
+.project_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.project_showcase {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+}
+.project_showcase img {
+  width: 400px;
+  height: 250px;
+}
+.project_showcase .text_box {
+  width: 400px;
+  height: 250px;
+}
+
+
+
