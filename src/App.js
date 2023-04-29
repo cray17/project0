@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
 
 function App() {
-  const location = useLocation();
   const [scrollDirection, setScrollDirection] = useState('none');
   const [currentPage, setCurrentPage] = useState('home');
 
@@ -15,7 +14,7 @@ function App() {
   }, []);
 
   const handleScroll = (event) => {
-    const { deltaY, deltaX } = event;
+    const { deltaX } = event;
 
     if (deltaX > 0) {
       setScrollDirection('right');
@@ -26,23 +25,28 @@ function App() {
     }
   };
 
+  return (
+    <div className={`App ${scrollDirection}`}>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/about" element={<AboutPage />} />
+        <Route exact path="/portfolio" element={<PortfolioPage />} />
+      </Routes>
+      <CurrentPageSetter setCurrentPage={setCurrentPage} />
+    </div>
+  );
+}
+
+function CurrentPageSetter({ setCurrentPage }) {
+  const location = useLocation();
+
   useEffect(() => {
     const { pathname } = location;
     const path = pathname.split('/')[1];
     setCurrentPage(path || 'home');
-  }, [location]);
+  }, [location, setCurrentPage]);
 
-  return (
-    <div className={`App ${scrollDirection}`}>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/portfolio" component={PortfolioPage} />
-        </Switch>
-      </Router>
-    </div>
-  );
+  return null;
 }
 
 export default App;
