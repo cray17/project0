@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
+import ContactForm from './ContactForm.js'
 
 export default function App() {
     const parallax = useRef<IParallax>(null!);
@@ -185,11 +186,13 @@ export default function App() {
                     style={{
                         backgroundColor: "#445A67",
                         display: "flex",
-                        alignItems: "center",
+                        alignItems: "start",
                         justifyContent: "center",
                         height: "100%",
                     }}
-                ></ParallaxLayer>
+                >
+                <ContactForm />
+                </ParallaxLayer>
             </Parallax>
         </div>
     );
