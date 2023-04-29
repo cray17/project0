@@ -1,18 +1,18 @@
 import React, { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
-import ContactForm from './ContactForm.js'
+import ContactForm from "./ContactForm.js";
 
 export default function App() {
     const parallax = useRef<IParallax>(null!);
     return (
         <div style={{ width: "100%", height: "100%", background: "#253237" }}>
-            <Parallax ref={parallax} pages={4}>
+            <Parallax ref={parallax} pages={5}>
                 <ParallaxLayer
                     offset={0}
                     onClick={() => parallax.current.scrollTo(1)}
                     speed={1}
                     style={{
-                        backgroundColor: "#B4C9C7",
+                        backgroundColor: "#b6667d",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "end",
@@ -25,7 +25,7 @@ export default function App() {
                     onClick={() => parallax.current.scrollTo(2)}
                     speed={1}
                     style={{
-                        backgroundColor: "#B4C9C7",
+                        backgroundColor: "#b6667d",
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "end",
@@ -102,7 +102,7 @@ export default function App() {
                     onClick={() => parallax.current.scrollTo(3)}
                     speed={1}
                     style={{
-                        backgroundColor: "#57838D",
+                        backgroundColor: "#995c8c",
                         display: "flex",
                         flexDirection: "column",
                         alignItems: "center",
@@ -181,17 +181,31 @@ export default function App() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={3}
-                    onClick={() => parallax.current.scrollTo(0)}
+                    onClick={() => parallax.current.scrollTo(4)}
                     speed={1}
                     style={{
-                        backgroundColor: "#445A67",
+                        backgroundColor: "#80256d",
                         display: "flex",
                         alignItems: "start",
                         justifyContent: "center",
                         height: "100%",
                     }}
                 >
-                <ContactForm />
+                    <h1>experience</h1>
+                </ParallaxLayer>
+                <ParallaxLayer
+                    offset={4}
+                    onClick={() => parallax.current.scrollTo(0)}
+                    speed={1}
+                    style={{
+                        backgroundColor: "#281439",
+                        display: "flex",
+                        alignItems: "start",
+                        justifyContent: "center",
+                        height: "100%",
+                    }}
+                >
+                    <ContactForm />
                 </ParallaxLayer>
             </Parallax>
         </div>
