@@ -8,7 +8,19 @@ export default function App() {
             <Parallax ref={parallax} pages={4}>
                 <ParallaxLayer
                     offset={0}
-                    factor={3}
+                    onClick={() => parallax.current.scrollTo(1)}
+                    speed={1}
+                    style={{
+                        backgroundColor: "#B4C9C7",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "end",
+                        height: "100%",
+                    }}
+                />
+
+                <ParallaxLayer
+                    offset={1}
                     onClick={() => parallax.current.scrollTo(2)}
                     speed={1}
                     style={{
@@ -19,6 +31,9 @@ export default function App() {
                         height: "100%",
                     }}
                 />
+
+
+
                 <ParallaxLayer
                     offset={0}
                     speed={0.5}
