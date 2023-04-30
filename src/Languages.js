@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FaPython, FaCuttlefish, FaJava, FaDatabase, FaLanguage, FaRProject } from 'react-icons/fa';
+import { FaPython, FaCuttlefish, FaJava, FaDatabase, FaLinux, FaRProject, FaAws } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
 function LanguageIcons() {
@@ -9,7 +9,11 @@ function LanguageIcons() {
       <IconContext.Provider value={{ className: 'icon' }}>
         <div className="icon-container">
           <div className="icon-circle"><FaPython /></div>
+      </div>
+      <div className="icon-container">
+          <div className="icon-circle"><FaAws /></div>
         </div>
+
         <div className="icon-container">
           <div className="icon-circle"><FaCuttlefish /></div>
         </div>
@@ -20,7 +24,7 @@ function LanguageIcons() {
           <div className="icon-circle"><FaDatabase /></div>
         </div>
         <div className="icon-container">
-          <div className="icon-circle"><FaLanguage /></div>
+          <div className="icon-circle"><FaLinux /></div>
         </div>
         <div className="icon-container">
           <div className="icon-circle"><FaRProject /></div>
