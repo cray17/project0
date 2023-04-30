@@ -3,9 +3,11 @@ import { useSprings, animated, to as interpolate } from '@react-spring/web'
 import { useGesture } from 'react-use-gesture'
 import solarbi from './img/solarbi.svg'
 import csm from './img/csm.svg'
+import spectrum from './img/spectrum.svg'
 import styles from './styles.module.css'
 
 const cards = [
+  spectrum,
   solarbi,
   csm,
 ]
