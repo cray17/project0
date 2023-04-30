@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import ContactForm from "./ContactForm.js";
+import LanguageIcons from "./Languages.js";
+import Deck from "./Deck.tsx";
 
 export default function App() {
     const parallax = useRef<IParallax>(null!);
@@ -58,6 +60,19 @@ export default function App() {
                             veniam quibusdam?
                         </p>
                     </div>
+                </ParallaxLayer>
+
+                <ParallaxLayer
+                    offset={1.1}
+                    speed={0.25}
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "end",
+                        pointerEvents: "none",
+                    }}
+                >
+                    <LanguageIcons />
                 </ParallaxLayer>
 
                 <ParallaxLayer
@@ -198,7 +213,7 @@ export default function App() {
                     style={{
                         backgroundColor: "#80256d",
                         display: "flex",
-                        alignItems: "start",
+                        alignItems: "flex-start",
                         justifyContent: "center",
                         height: "100%",
                     }}
@@ -209,6 +224,21 @@ export default function App() {
                         </b>
                     </h1>
                 </ParallaxLayer>
+
+                <ParallaxLayer
+                    offset={3.5}
+                    speed={1}
+                    style={{
+                        backgroundColor: "#80256d",
+                        display: "flex",
+                        alignItems: "start",
+                        justifyContent: "center",
+                        height: "100%",
+                    }}
+                    >
+                    <Deck />
+                </ParallaxLayer>
+
                 <ParallaxLayer
                     offset={4}
                     onClick={() => parallax.current.scrollTo(0)}
@@ -222,11 +252,11 @@ export default function App() {
                         height: "20%",
                     }}
                 >
-                        <h1>
-                            <b>
-                                <u>Contact Me</u>
-                            </b>
-                        </h1>
+                    <h1>
+                        <b>
+                            <u>Contact Me</u>
+                        </b>
+                    </h1>
 
                     <ContactForm />
                 </ParallaxLayer>
