@@ -232,10 +232,20 @@ export default function App() {
                         backgroundColor: "#80256d",
                         display: "flex",
                         alignItems: "start",
-                        justifyContent: "center",
+                        justifyContent: "space-evenly",
                         height: "100%",
                     }}
-                    >
+                >
+                    <div className="text_box">
+                        <p>
+                            Amet autem necessitatibus reprehenderit doloribus
+                            voluptas? Nesciunt dicta accusantium sit atque fuga.
+                            Amet esse soluta tempore alias possimus in, quasi
+                            cum Repellat earum praesentium facilis quidem illo
+                            maiores Totam assumenda
+                        </p>
+                    </div>
+
                     <Deck />
                 </ParallaxLayer>
 
