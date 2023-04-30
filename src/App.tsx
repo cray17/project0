@@ -63,7 +63,7 @@ export default function App() {
                     style={{
                         display: "block",
                         marginLeft: "70%",
-                        marginTop: "20%"
+                        marginTop: "12%"
                     }}
                 >
                     <LanguageIcons />
