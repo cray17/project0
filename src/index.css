@@ -170,38 +170,16 @@ img {
   margin-right: 10px;
 }
 
-.python {
-  background-color: #FFD43B;
-}
-
-.cpp {
-  background-color: #6E4C13;
-}
-
-.java {
-  background-color: #F89820;
-}
-
-.sql {
-  background-color: #002e5d;
-}
-
-.c {
-  background-color: #5D5D5D;
-}
-
-.javascript {
-  background-color: #F0DB4F;
-}
-
-.r {
-  background-color: #75AADB;
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .language-icons {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin: 30px;
   width: 400px;
   height: 200px;
 }
@@ -211,6 +189,10 @@ img {
 }
 
 .experience-content {
-    height: 1200px;
-    width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 200px;
+  border: 1px solid transparent;
 }
+
+

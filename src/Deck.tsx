@@ -39,7 +39,7 @@ export default function Deck() {
         if (index !== i) return // We're only interested in changing spring-data for the current spring
         const isGone = gone.has(index)
         const x = (200 + window.innerWidth) // When a card is gone it flys out right
-        const rot = 0 // How much the card tilts, flicking it harder makes it rotate faster
+        const rot = 0.3 // How much the card tilts, flicking it harder makes it rotate faster
         const scale = 1 // Active cards lift up a bit
         gone.add(index) // Flag the card ready to fly out
         return {

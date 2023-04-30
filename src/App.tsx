@@ -208,13 +208,15 @@ export default function App() {
                 </ParallaxLayer>
                 <ParallaxLayer
                     offset={3}
+                    factor={0.5}
                     onClick={() => parallax.current.scrollTo(4)}
                     speed={1}
                     style={{
                         backgroundColor: "#80256d",
                         display: "flex",
-                        alignItems: "flex-start",
-                        justifyContent: "center",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "flex-start",
                         height: "100%",
                     }}
                 >
@@ -224,28 +226,31 @@ export default function App() {
                         </b>
                     </h1>
                 </ParallaxLayer>
-
                 <ParallaxLayer
-                    offset={3.5}
+                    offset={3}
                     speed={1}
                     style={{
-                        backgroundColor: "#80256d",
-                        display: "flex",
-                        alignItems: "start",
-                        justifyContent: "space-evenly",
-                        height: "100%",
+                        width: "15%",
+                        marginLeft: "10%",
+                        marginTop: "25%",
                     }}
                 >
                     <div className="text_box">
                         <p>
-                            Amet autem necessitatibus reprehenderit doloribus
-                            voluptas? Nesciunt dicta accusantium sit atque fuga.
-                            Amet esse soluta tempore alias possimus in, quasi
-                            cum Repellat earum praesentium facilis quidem illo
-                            maiores Totam assumenda
+                            Adipisicing repudiandae magni assumenda alias
+                            voluptatem Et itaque unde tenetur et ipsam ex
+                            repellendus sed, adipisci! Facilis quos corporis
+                            mollitia blanditiis quasi! Maiores fuga repellat
+                            assumenda illo tempora hic corrupti!
                         </p>
                     </div>
+                </ParallaxLayer>
 
+                <ParallaxLayer
+                    offset={3}
+                    speed={1}
+                    style={{ width: "15%", marginLeft: "50%" }}
+                >
                     <Deck />
                 </ParallaxLayer>
 
