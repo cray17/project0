@@ -52,24 +52,18 @@ export default function App() {
                             </b>
                         </h1>
                         <p>
-                            Ipsum officiis dolor adipisci nihil necessitatibus
-                            Exercitationem inventore harum maxime odit
-                            repellendus Blanditiis praesentium ipsam quibusdam
-                            praesentium quisquam! Cumque enim laboriosam
-                            distinctio vero sint iusto veniam. Adipisci placeat
-                            veniam quibusdam?
+                           Hello! My name is Christian Mellado. I am currently going into my senior year at Colorado School of Mines. I am currently pursuing a degree in Computer Science with a focus on Data Science. Computer Science has been a lifelong interest of mine and I am thankful to be in such an interesting field.
                         </p>
                     </div>
                 </ParallaxLayer>
 
                 <ParallaxLayer
-                    offset={1.1}
+                    offset={1.3}
                     speed={0.25}
                     style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "end",
-                        pointerEvents: "none",
+                        display: "block",
+                        marginLeft: "70%",
+                        marginTop: "20%"
                     }}
                 >
                     <LanguageIcons />
@@ -92,12 +86,7 @@ export default function App() {
                             </b>
                         </h1>
                         <p>
-                            Ipsum officiis dolor adipisci nihil necessitatibus
-                            Exercitationem inventore harum maxime odit
-                            repellendus Blanditiis praesentium ipsam quibusdam
-                            praesentium quisquam! Cumque enim laboriosam
-                            distinctio vero sint iusto veniam. Adipisci placeat
-                            veniam quibusdam?
+                           I take pride in producing high quality work, and use a variety of tools to help me accomplish a given task in an efficient manner. Some of my top skills would be problem solving, an abillity to learn complex topics quickly, as well as a desire to do so. Some of my more assessable skills include many programming languages, DevOps & familiarity with Linux systems. 
                         </p>
                     </div>
                 </ParallaxLayer>
@@ -113,9 +102,11 @@ export default function App() {
                 >
                     <img
                         src={
-                            "https://www.svgrepo.com/show/512717/profile-image-zoom-1347.svg"
+                            "https://cdn.discordapp.com/attachments/373258513482252299/1102331526210924544/IMG_4114.jpg"
                         }
-                        style={{ width: "60%" }}
+                        style={{ width: "18%",
+                        marginLeft: "20%"}}
+                        alt="me"
                     />
                 </ParallaxLayer>
 
@@ -232,24 +223,21 @@ export default function App() {
                     style={{
                         width: "15%",
                         marginLeft: "10%",
-                        marginTop: "25%",
+                        marginTop: "15%",
                     }}
                 >
                     <div className="text_box">
-                        <p>
-                            Adipisicing repudiandae magni assumenda alias
-                            voluptatem Et itaque unde tenetur et ipsam ex
-                            repellendus sed, adipisci! Facilis quos corporis
-                            mollitia blanditiis quasi! Maiores fuga repellat
-                            assumenda illo tempora hic corrupti!
+                        <p>I have had the exciting pleasure of getting to work with many different companies throughout my CS career. Here are a few of the notable experiences I have had! Click the deck of cards to cycle through.
                         </p>
+                        <br />
+                        <p>Most of my experiences lie somewhere within my interest, as Data Science is something I have come to enjoy quite a bit.</p>
                     </div>
                 </ParallaxLayer>
 
                 <ParallaxLayer
                     offset={3}
                     speed={1}
-                    style={{ width: "15%", marginLeft: "50%" }}
+                    style={{ width: "15%", marginLeft: "60%", marginTop: "5%" }}
                 >
                     <Deck />
                 </ParallaxLayer>
